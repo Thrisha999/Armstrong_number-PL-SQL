@@ -1,0 +1,26 @@
+declare
+	n int;
+	m int;
+	k int;
+	x int:=0;
+	y int;
+	s int:=0;
+	l int;
+begin
+	n:=&n;
+	m:=n;
+	l:=n;
+	while(n>0)
+	loop
+	  x:=trunc(n/10);
+	  y:=power(k,x);
+	  s:=s+y;
+	  m:=trunc(m/10);
+	end loop;
+	if s=l then
+		dbms_output.put_line(l||'is an armstrong number');
+	else
+		dbms_output.put_line(l||'is not an armstrong number');
+	end if;
+end;
+/
